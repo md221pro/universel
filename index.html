@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Universel Nettoyage</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Universel Nettoyage</h1>
+    <div class="header-logo">
+        <img src="logo.png" alt="Logo Universel Nettoyage">
+    </div>
+
+    <div class="header-info">
+        <span>📍 Local: Sénégal, Thiès</span>
+        <span>📞 770902217 | 750115976</span>
+        <a href="#contact" class="contact-btn">Nous contacter</a>
+    </div>
+
+    <!-- Bulles animées -->
+    <div class="bubble" style="width:40px;height:40px;left:10%;animation-duration:12s;"></div>
+    <div class="bubble" style="width:30px;height:30px;left:25%;animation-duration:8s;"></div>
+    <div class="bubble" style="width:50px;height:50px;left:70%;animation-duration:10s;"></div>
+    <div class="bubble" style="width:35px;height:35px;left:50%;animation-duration:14s;"></div>
+
+    <nav>
+        <a href="#services">Services</a>
+        <a href="#why">Pourquoi nous choisir</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="section-bg" id="services">
+    <video autoplay muted loop>
+        <source src="video-nettoyage.mp4" type="video/mp4">
+    </video>
+    <div class="section-content services">
+        <h2>Nos Services</h2>
+        <div class="services-container">
+            <div class="service-card">
+                <img src="service-maison.png" alt="Nettoyage Maison">
+                <h3>Nettoyage Maison</h3>
+                <p>Nettoyage complet de votre maison avec produits de qualité et équipe professionnelle.</p>
+            </div>
+            <div class="service-card">
+                <img src="service-desinfection.png" alt="Désinfection">
+                <h3>Désinfection</h3>
+                <p>Service spécialisé pour désinfecter vos espaces et garantir un environnement sain.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section-bg why-choose" id="why">
+    <img class="background" src="background-clean.jpg" alt="Fond nettoyage">
+    <div class="section-content">
+        <h2>Pourquoi choisir Universel Nettoyage ?</h2>
+        <p>Nous prenons soin de votre environnement avec sérieux et professionnalisme. Nos services incluent le nettoyage complet et la <strong>désinfection</strong> pour un espace sain et sûr.</p>
+        <p>Nous utilisons des produits de qualité, respectons toutes les normes d’hygiène et adaptons nos services à vos besoins pour garantir votre satisfaction.</p>
+    </div>
+</section>
+
+<section class="socials" id="contact">
+    <h2>Suivez-nous</h2>
+    <a href="https://www.instagram.com/universelnettoyagesn?igsh=cW43djJtOW9tbmt3" target="_blank">
+        <img src="instagram.png" alt="Instagram">Instagram
+    </a>
+    <a href="https://www.tiktok.com/@universelnettoyage" target="_blank">
+        <img src="tiktok.png" alt="TikTok">TikTok
+    </a>
+    <a href="https://wa.me/221770902217" target="_blank">
+        <img src="whatsapp.png" alt="WhatsApp">WhatsApp
+    </a>
+</section>
+
+<footer>
+    &copy; 2025 Universel Nettoyage | Tous droits réservés
+</footer>
+
+<script>
+// Fade-in au scroll
+const sections = document.querySelectorAll('.section-content');
+window.addEventListener('scroll', () => {
+    sections.forEach(section => {
+        const rect = section.getBoundingClientRect();
+        if(rect.top < window.innerHeight - 100){
+            section.classList.add('visible');
+        }
+    });
+});
+</script>
+
+</body>
+</html>
